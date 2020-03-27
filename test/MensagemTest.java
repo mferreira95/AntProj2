@@ -40,7 +40,7 @@ public class MensagemTest {
     @Test
     public void getMessageTestTrue() {
         String m = new Mensagem().getMessage();
-        assertEquals("Hello World from class Mensagem antproj2 versao 2.0", m);
+        assertEquals("Hello World from class Mensagem antproj2 versao", m);
     }
     
     @Test

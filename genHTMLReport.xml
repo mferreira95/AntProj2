@@ -1,0 +1,33 @@
+ <project name="AntProj2" default="gen" basedir="./build/junitreport">
+
+        <description>
+
+                Generate the HTML report from JUnit XML files
+
+        </description>
+
+ 
+
+        <target name="gen">
+
+                <property name="genReportDir" location="${basedir}/unitTestReportsHTML"/>
+
+                <delete dir="${genReportDir}"/>
+
+                <mkdir dir="${genReportDir}"/>
+
+                <junitreport todir="${basedir}/unitTestReportsHTML">
+
+                        <fileset dir="${basedir}">
+
+                                <include name="TEST-*.xml"/>
+
+                        </fileset>
+
+                        <report format="frames" todir="${genReportDir}/html"/>
+
+                </junitreport>
+
+        </target>
+
+</project>

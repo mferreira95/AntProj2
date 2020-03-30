@@ -24,7 +24,7 @@
 
                         </fileset>
 
-                        <report format="frames" todir="${genReportDir}/html"/>
+                        <report format="noframes" todir="${genReportDir}/html"/>
 
                 </junitreport>
 
